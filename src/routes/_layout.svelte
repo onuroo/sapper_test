@@ -1,5 +1,16 @@
+
+<script context="module">
+	export function preload() {
+		return this.fetch(`header.json`).then(r => r.json()).then(header => {
+			return { header };
+		});
+	}
+</script>
+
 <script>
 	export let segment;
+
+	export let header;
 </script>
 
 <style>
@@ -13,6 +24,7 @@
 	}
 </style>
 
+{@html header[0].html}
 <main>
 	<slot></slot>
 </main>

@@ -24,5 +24,3 @@
 {@html dashboard[0].html}
 
 {@html dashboard[1].html}
-
-{@html dashboard[2].html}
